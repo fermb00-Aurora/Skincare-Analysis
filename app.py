@@ -256,7 +256,7 @@ if page == "Skin Analysis":
     </h1>
     """, unsafe_allow_html=True)
 
-    api_key_goog = st.secrets["general"]["goog_api_key"]
+    api_key_goog = "AIzaSyAha7cLMcfDgCwfolRAsTO9w5pb0auB4NY"
 
     genai.configure(api_key=api_key_goog)
 
