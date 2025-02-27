@@ -11,9 +11,9 @@ st.set_page_config(page_title="Skin & Makeup Analysis App", page_icon=':sparkles
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-local_css("style/style.css")
+local_css("style.css")
 
-st.image("images/maintitle.png")
+st.image("maintitle.png")
 
 menu = ["Home", "Skin Analysis", "The Future"]
 
@@ -92,7 +92,7 @@ if page == "Home":
         </h6>
         """, unsafe_allow_html=True)
     with col2:
-        st.image("images/skincare.gif")
+        st.image("skincare.gif")
 
     st.markdown('---')
 
@@ -148,7 +148,7 @@ if page == "Home":
 
     col1, col2 = st.columns([2,5])
     with col1:
-        st.image("images/skincaregirl.png")
+        st.image("skincaregirl.png")
     with col2:
         st.markdown('')
         st.markdown("""
@@ -220,7 +220,7 @@ if page == "Home":
 
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
     with col4:
-        st.image('images/gemini.png')
+        st.image('gemini.png')
 
     st.markdown("""
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
